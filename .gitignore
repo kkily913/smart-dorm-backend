@@ -1,0 +1,38 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example sysUserDetails template template
+### Example sysUserDetails template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+target
+*.log
+logs
+.history
+
+
+docker/*/data/
+docker/minio/config
+docker/xxljob/logs
+application-youlai.yml
+
+# Private configuration, backups and runtime data
+.env
+.env.*
+!.env.example
+/config/application-local.yml
+/config/application-*.local.yml
+*.local
+*.pem
+*.key
+*.p12
+*.jks
+*.bundle
+*.dump
+*.sql.gz
+/private-backups/
+/uploads/
+/node_modules/
+/dist/

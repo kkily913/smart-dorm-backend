@@ -1,0 +1,4 @@
+-- Legacy entry point intentionally disabled for safety.
+-- The original upstream SQL included DROP TABLE and demo accounts.
+-- Preserved in the local pre-publication backup, not in the publication snapshot.
+-- Follow sql/README.md; use init/001-system-schema.sql only in a new empty database.

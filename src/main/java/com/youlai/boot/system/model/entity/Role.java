@@ -1,0 +1,62 @@
+package com.youlai.boot.system.model.entity;
+
+import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.youlai.boot.common.base.BaseEntity;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+/**
+ * 角色实体
+ *
+ * @author Ray.Hao
+ * @since 2024/6/23
+ */
+@TableName("sys_role")
+@Data
+@EqualsAndHashCode(callSuper = true)
+public class Role extends BaseEntity {
+
+    /**
+     * 角色名称
+     */
+    private String name;
+
+    /**
+     * 角色编码
+     */
+    private String code;
+
+    /**
+     * 显示顺序
+     */
+    private Integer sort;
+
+    /**
+     * 角色状态(1-正常 0-停用)
+     */
+    private Integer status;
+
+    /**
+     * 数据权限
+     */
+    private Integer dataScope;
+
+    /**
+     * 创建人 ID
+     */
+    @TableField(fill = FieldFill.INSERT)
+    private Long createBy;
+
+    /**
+     * 更新人 ID
+     */
+    @TableField(fill = FieldFill.INSERT_UPDATE)
+    private Long updateBy;
+
+    /**
+     * 是否删除(0-否 1-是)
+     */
+    private Integer isDeleted;
+}

@@ -1,0 +1,16 @@
+# Copy to application-local.yml (ignored); never commit real values.
+# This file is loaded only under the dev profile. Environment variables may override it.
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/smart_dorm
+    username: smart_dorm
+    password: "${DB_PASSWORD}"
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      password: "${REDIS_PASSWORD:}"
+security:
+  session:
+    jwt:
+      secret-key: "${JWT_SECRET}"
