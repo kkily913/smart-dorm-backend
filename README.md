@@ -1,6 +1,6 @@
 # 智慧校舍管理系统 · 后端
 
-用于 Java 后端求职学习的个人项目。基于 [有来开源组织 youlai-boot](https://gitee.com/youlaiorg/youlai-boot) 二次开发；保留原 Apache-2.0 [许可证](LICENSE) 和代码署名。前端为独立的 smart-dorm-frontend 仓库，不合并仓库、不移除上游归属。
+用于 Java 后端学习的个人项目。基于 [有来开源组织 youlai-boot](https://gitee.com/youlaiorg/youlai-boot) 二次开发；保留原 Apache-2.0 [许可证](LICENSE) 和代码署名。前端为独立的 smart-dorm-frontend 仓库，不合并仓库、不移除上游归属。
 
 ## 实际进度
 
